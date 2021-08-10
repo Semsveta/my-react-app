@@ -1,0 +1,73 @@
+@import './../../styles/partials/variables';
+@import './../../styles/partials/mixins';
+@import './../../styles/partials/base';
+
+
+.tableHeaderLeft {
+   background: $tableHeaderBackground;
+   border: 2px solid  #eee !important;
+   @include cellStyle;
+}
+
+.tableHeaderRight {
+  @include cellStyle;
+  background: $tableHeaderBackground;
+  border: 2px solid  #eee !important;
+}
+
+.leftColumn {
+  float: left;
+  width: 49.9%;
+}
+
+.rightColumn {
+  float: right;
+  width: 49.9%;
+}
+
+select {
+  text-align-last: center;
+}
+
+.cellLeft {
+  @include cellStyle; 
+  @include cellBorderStyle
+}
+
+.cellLeft:nth-child(odd),
+.cellRight:nth-child(odd) {
+  background: rgb(228, 226, 241);
+  color: $gray-800;
+}
+
+.cellRight {
+  @include cellStyle; 
+  @include cellBorderStyle; 
+}
+
+@media (max-width:500px) {
+  .leftColumn {
+   width: 100%;
+  }
+  .rightColumn {
+    width: 100%;
+  }
+  .columnWithTable {
+    width: 100%;
+    border: none;
+  }
+  .tableHeaderLeft,
+  .tableHeaderRight,
+  .cellLeft,
+  .cellLeft
+  {
+   border: none;
+  }
+  .tableHeaderRight {
+    margin-top: 10px;
+  }
+}
+
+
+
+

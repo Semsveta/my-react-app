@@ -1,0 +1,37 @@
+@mixin resizable($direction) {
+    overflow: auto; // Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`
+    resize: $direction; // Options: horizontal, vertical, both
+  }
+
+@mixin inputStyle {
+  border: thin solid #eee !important;
+  // border-radius: 4px !important;
+  width: -webkit-fill-available;
+  background-color: rgb(186, 184, 197);
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  font-weight: 300;
+  height: 40px;
+}
+
+@mixin cellStyle {
+  padding: 0;
+  width: -webkit-fill-available;
+  margin-bottom: 0px;
+  font-weight: 300;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(186, 184, 197);
+ }
+
+@mixin cellBorderStyle {
+ border-right: 2px solid #eee !important;
+ border-top: 2px solid  transparent !important;
+ border-bottom: 2px solid  #eee !important;
+ border-left: 2px solid #eee !important;
+}
+

@@ -1,0 +1,101 @@
+@import './../../styles/partials/variables';
+@import './../../styles/partials/mixins';
+@import './../../styles/partials/base';
+
+
+.tableWrapper {
+  max-width: 600px;
+  margin-left: 40%;
+  overflow: hidden;
+  font-family: Helvetica;
+}
+
+.title {
+  font-family: $font-family-title;
+  font-style: italic;
+}
+
+.introduction {
+  color:rgb(15, 247, 216);
+  margin-bottom: 40px;
+} 
+
+.topBar {
+  background: $tableHeaderBackground;
+  border: thin solid  #eee !important;
+  display: flex;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+
+.columnWithControls {
+  width: 38%;
+  float: left;
+}
+.columnWithTable {
+    float: right;
+    width: 59%;
+}
+
+.inputEnter {
+   @include inputStyle;
+}
+.inputAdd {
+  @include inputStyle;
+  background-color: #0cbba4; 
+}
+
+.inputChoose {
+    @include inputStyle;
+    margin-bottom: 40%;
+  }
+.inputSearch {
+  border: 1px solid #eee !important;
+  color: white;
+  font-size: 12px;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url( //addsearch.com/logo/AAAAAA-20.png ) !important;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  padding: 15px !important;
+  cursor: auto !important;
+  width: -webkit-fill-available;
+}
+
+.searchBox {
+    margin-top: 22%;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+  }
+::placeholder {
+    color:white;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+select:root:focus {
+  outline-color: whitesmoke;
+}
+
+@media (max-width:500px) {
+  .columnWithControls {
+    width: 100%;
+    
+  }
+  .columnWithTable {
+      width: 100%;
+      border: 2px solid white;
+    }
+
+  .inputChoose {
+    margin-bottom: 80px;
+  }
+
+  .inputSearch {
+    margin-bottom: 20px;
+  }
+}
