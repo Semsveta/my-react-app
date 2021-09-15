@@ -16,14 +16,15 @@
 }
 
 .introduction {
-  color:rgb(15, 247, 216);
+  color: $gray-100;
   margin-bottom: 40px;
 } 
 
 .topBar {
-  background: $tableHeaderBackground;
-  border: thin solid  #eee !important;
+  background: rgb(228, 226, 241);
   display: flex;
+  color: $gray-600;
+  font-weight: 600;
   margin-bottom: 10%;
   justify-content: center;
 }
@@ -36,14 +37,21 @@
     float: right;
     width: 59%;
 }
-
 .inputEnter {
    @include inputStyle;
 }
 .inputAdd {
   @include inputStyle;
+  border: 2px solid #eee;
   background-color: #0cbba4; 
-}
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 5px 40px -10px rgba(158, 245, 245, 0.57);
+	}
+
+.inputAdd:active {
+  transform: scale(0.90);
+  box-shadow: 0px 2px 25px -5px rgba(185, 241, 241, 0.57);
+  }
 
 .inputChoose {
     @include inputStyle;
@@ -97,5 +105,11 @@ select:root:focus {
 
   .inputSearch {
     margin-bottom: 20px;
+  }
+}
+@media (max-width:1050px) {
+  .tableWrapper{
+  margin:auto;
+  justify-content: center;
   }
 }

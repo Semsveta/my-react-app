@@ -4,8 +4,7 @@
   }
 
 @mixin inputStyle {
-  border: thin solid #eee !important;
-  // border-radius: 4px !important;
+  border: thin solid #eee;
   width: -webkit-fill-available;
   background-color: rgb(186, 184, 197);
   margin: 0 auto 10px auto;

@@ -4,14 +4,14 @@
 
 
 .tableHeaderLeft {
-   background: $tableHeaderBackground;
+  background-color: rgb(186, 184, 197);
    border: 2px solid  #eee !important;
    @include cellStyle;
 }
 
 .tableHeaderRight {
   @include cellStyle;
-  background: $tableHeaderBackground;
+  background-color: rgb(186, 184, 197);
   border: 2px solid  #eee !important;
 }
 

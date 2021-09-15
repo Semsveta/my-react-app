@@ -42,11 +42,11 @@ const InputController = () => {
     return (
         <div className='tableWrapper'>
             <div>
-                <h1 className='title'>Marvelous!</h1>
-                <p className='introduction'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <h1 className='title'>Hello World!</h1>
+                <p className='introduction'> This is a simple demonstration of React and Redux capability to manage state on the page. Enter some text to a text field and pick a column from the drop-down box, then click on the “ADD ITEM” button, and the entry will show up in the proper column in the table. The search box demonstrates ability to do dynamic filtering of table contents. Try entering a part of any cell value from the table into the search box and you will see how the table gets filtered as you type. </p>
 
             </div>
-            <div className='topBar'><p>ADD AN ITEM</p>
+            <div className='topBar'><p>TITLE</p>
             </div>
             <div className='columnWithControls'>
 

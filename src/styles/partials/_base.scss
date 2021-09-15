@@ -22,3 +22,8 @@ body {
     font-size: 0.8rem;
     }
   }
+  @media (max-width:1050px) {
+    body {
+    background: url('./../images/background-dark-gray.jpg');
+    }
+  }
