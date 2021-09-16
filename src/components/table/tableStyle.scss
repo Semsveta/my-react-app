@@ -4,14 +4,14 @@
 
 
 .tableHeaderLeft {
-  background-color: rgb(186, 184, 197);
-   border: 2px solid  #eee !important;
-   @include cellStyle;
+  @include cellStyle;
+  background-color: transparent;
+  border: 2px solid  #eee !important;
 }
 
 .tableHeaderRight {
   @include cellStyle;
-  background-color: rgb(186, 184, 197);
+  background-color: transparent;
   border: 2px solid  #eee !important;
 }
 
@@ -36,8 +36,7 @@ select {
 
 .cellLeft:nth-child(odd),
 .cellRight:nth-child(odd) {
-  background: rgb(228, 226, 241);
-  color: $gray-800;
+  background: transparent;
 }
 
 .cellRight {
