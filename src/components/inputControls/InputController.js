@@ -13,6 +13,7 @@ const InputController = () => {
     const handleItemChange = (event) => {
         setItem(event.target.value);
     }
+
     const handleSelectChange = (event) => {
         setColumn(event.target.value)
     }
@@ -31,8 +32,10 @@ const InputController = () => {
     const handleAddClick = () => {
         const itemCopy = item
         const columnCopy = column
+        setSearchPhrase('');
         setItem('');
         addItemToColumn(itemCopy, columnCopy);
+
     }
 
     const handleSearchChange = (event) => {
@@ -85,6 +88,7 @@ const InputController = () => {
                             id="search"
                             onFocus={(e) => e.target.placeholder = ""}
                             onBlur={(e) => e.target.placeholder = "SEARCH"}
+                            value={searchPhrase}
                         />
                     </div>
                 </form>

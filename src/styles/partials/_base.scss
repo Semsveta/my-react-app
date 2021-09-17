@@ -8,7 +8,6 @@ body {
     text-align: left; 
     background: url('./../images/background-dark1.jpg');
     background-size: cover;
-  
   }
 
  .container {
@@ -24,6 +23,6 @@ body {
   }
   @media (max-width:1050px) {
     body {
-    background: url('./../images/background-dark-gray.jpg');
+      background: url('./../images/background-dark1.jpg') no-repeat 0 30%;
     }
   }
